@@ -239,7 +239,7 @@ footer ul {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .bg-header {
         height: 700px;
     }
