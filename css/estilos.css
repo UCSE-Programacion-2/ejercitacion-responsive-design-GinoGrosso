@@ -208,11 +208,11 @@ footer ul {
     }
     .card>h3 {
         font-size: 1.2em;
-        margin: 10px 0;
+        margin: 5px 0;
     }
     .contacto,
     .formulario {
-        padding: 20px;
+        padding: 10px;
     }
     .contacto {
         width: 100%;
@@ -228,10 +228,23 @@ footer ul {
         width: 100%;
     }
     form {
-        padding: 20px;
+        padding: 10px;
+    }
+    .news-letter {
+        width: 300px;
     }
     footer {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-header {
+        height: 700px;
+    }
+    .bg-header h1 {
+        font-size: 2rem;
+        text-align: center;
     }
 }
