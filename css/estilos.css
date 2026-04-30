@@ -1,6 +1,6 @@
 /* Estilos Generales */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
 :root {
     --color-principal: #062f5b;
     --color-secundario: #679dd6;
@@ -63,14 +63,15 @@ nav ul li a {
     font-weight: 500px;
 }
 
+
 /* Estilos section */
+
 section,
 footer {
     padding: 40px;
 }
 
 section>div {
-
     display: flex;
 }
 
@@ -79,7 +80,9 @@ h2 {
     text-align: center;
 }
 
+
 /* Estilos cards */
+
 #card-section>div {
     display: flex;
 }
@@ -91,7 +94,6 @@ h2 {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px #ccc;
     margin: 20px 10px;
-
 }
 
 .card>h3 {
@@ -100,7 +102,9 @@ h2 {
     margin: 20px 0;
 }
 
+
 /* Estilos contacto*/
+
 .contacto,
 .formulario {
     padding: 30px;
@@ -146,10 +150,11 @@ input[type="submit"] {
     background-color: var(--color-principal);
     border: 2px solid #fff;
     color: #fff;
-
 }
 
+
 /*footer*/
+
 footer {
     background-color: var(--color-principal);
     display: flex;
@@ -182,5 +187,64 @@ footer ul {
     right: 0;
 }
 
+
 /*** Responsive */
 
+@media (max-width: 768px) {
+    section>div {
+        display: flex;
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    #card-section>div {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .card>h3 {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+    .contacto,
+    .formulario {
+        padding: 10px;
+    }
+    .contacto {
+        width: 100%;
+        text-align: center;
+    }
+    .contacto>p {
+        line-height: 1.5;
+    }
+    .contacto>p>span {
+        font-size: 1.2rem;
+    }
+    .formulario {
+        width: 100%;
+    }
+    form {
+        padding: 10px;
+    }
+    .news-letter {
+        width: 300px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .bg-header {
+        height: 700px;
+    }
+    .bg-header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
